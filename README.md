@@ -7,8 +7,6 @@ Escreva mais dois códigos que resolvam o mesmo problema, mas dessa vez usando o
 
 Como desafio, imprima eles em ordem decrescente (20, 19, 18...)
 
-================================================================================================================================
-
 Esta é a Ativiade 03 do Talento Cloud (Proz ft AWS)
 Nele é uma atividade de loops, onde faço um contador de 1 a 20.
 
