@@ -1,15 +1,63 @@
-# ATV03_prozTC_Intro_Program
-Atividade 03 - Loops
-Precisamos imprimir um número para cada andar de um hotel de 20 andares. Porém, o dono do hotel é supersticioso e optou por não ter um 13ro andar.
+# Impressão de Números dos Andares de um Hotel (Excluindo o 13º Andar)
 
-Escreva um código que imprima todos os números exceto o número 13.
-Escreva mais dois códigos que resolvam o mesmo problema, mas dessa vez usando os outros dois tipos de laços de repetição aprendidos.
+Este projeto foi desenvolvido como parte do curso de Introdução à Programação oferecido pela Proz em parceria com a AWS no programa Talento Cloud. O objetivo é imprimir o número de cada andar de um hotel com 20 andares, mas sem o supersticioso 13º andar. Esse exercício reforça o uso de laços de repetição e controle de fluxo em Python.
 
-Como desafio, imprima eles em ordem decrescente (20, 19, 18...)
+## Funcionalidade do Programa
 
-Esta é a Ativiade 03 do Talento Cloud (Proz ft AWS)
-Nele é uma atividade de loops, onde faço um contador de 1 a 20.
+O código realiza a contagem de andares de um hotel, imprimindo todos os números de 1 a 20, exceto o 13. Para isso, o código usa três abordagens, uma para cada estrutura de repetição em Python:
 
-Primeiro é utilizado o for indo do 1 ao 20.
-Depois eu utilizo o While, também indo do 1 ao 20.
-Como solicitado na atividade, tenho que fazer na ordem descrescente, então decidi usar o for para isso.
+1. **Laço `for` em ordem crescente:** Imprime do 1º ao 20º andar, excluindo o 13º.
+2. **Laço `while` em ordem crescente:** Realiza a mesma tarefa, mas usando um laço `while`.
+3. **Laço `for` em ordem decrescente:** Imprime os andares de 20 a 1, excluindo o 13º.
+
+### Descrição dos Códigos
+
+1. **Laço `for` Crescente**
+   - Utiliza `for` com `range(1, 21)`.
+   - A condição `if i == 13` usa `continue` para pular o 13º andar.
+
+2. **Laço `while` Crescente**
+   - Define uma variável `andar = 1` e executa enquanto `andar <= 20`.
+   - A condição `if andar == 13` usa `continue` para pular o 13º andar.
+
+3. **Laço `for` Decrescente**
+   - Utiliza `for` com `range(20, 0, -1)` para contagem decrescente.
+   - A condição `if i == 13` usa `continue` para pular o 13º andar.
+
+## Exemplo de Saída
+
+### Laço `for` Crescente e `while` Crescente
+```plaintext
+1
+2
+3
+...
+12
+14
+15
+...
+20
+```
+
+### Laço `for` Decrescente
+```plaintext
+20
+19
+18
+...
+14
+12
+11
+...
+1
+```
+
+## Tecnologias e Conceitos Utilizados
+
+- **Python**: Linguagem de programação.
+- **Estruturas de Repetição**: `for` e `while`.
+- **Controle de Fluxo**: `continue` para pular valores específicos.
+
+## Autor
+
+Caio Frederico, como parte do curso Talento Cloud da Proz e AWS.
